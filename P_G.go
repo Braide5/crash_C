@@ -1,12 +1,12 @@
-package main
+//package main
 
-import (
+//import (
 	"log"
 
 	"github.com/sethvargo/go-password/password"
 )
 
-func main() {
+//func main() {
 	// Generate a password that is 64 characters long with 10 digits, 10 symbols,
 	// allowing upper and lower casae letters, disallowing repeat characyers.
 	res, err := password.Generate(64, 10, 10, false, false)
