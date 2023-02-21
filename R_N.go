@@ -59,3 +59,4 @@ func main() {
 	fmt.Println(y3.Intn(200))
 	fmt.Println(y3.Intn(200))
 }
+// last output is rigid, fix it!
