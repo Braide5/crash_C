@@ -9,21 +9,13 @@ import (
 
 func main() {
 
-	// Intn returns, as an
-	// int, a non-negative
-	// pseudo-random number in
-	// [0,n) from the default Source.
-	// i.e. simply call Intn to
-	// get the next random integer.
+
 	fmt.Println(rand.Intn(200))
 	fmt.Println(rand.Intn(200))
 	fmt.Println(rand.Intn(200))
 	fmt.Println()
 
-	// Float64 returns, as
-	// a float64, a pseudo-random
-	// number in [0.0,1.0)
-	// from the default Source.
+	
 	fmt.Println(rand.Float64())
 
 	// By default, it uses the value 1.
@@ -50,7 +42,7 @@ func main() {
 
 	x2 := rand.NewSource(55)
 	y2 := rand.New(x2)
-	fmt.Println(y2.Intn(200))
+	fmt.Println(y2.Intn(100))
 	fmt.Println(y2.Intn(200))
 	fmt.Println()
 	
