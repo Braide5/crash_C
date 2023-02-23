@@ -12,5 +12,5 @@ func whatdayisit() {
 func main() {
 	go whatdayisit()
 	time.Sleep(2 * time.Second)
-	fmt.Println("main function")
+	fmt.Println(main function)
 }
