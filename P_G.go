@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"math/rand"
-	"fmt"
+	//"fmt"
 
 	
 )
@@ -13,7 +13,7 @@ func main() {
 	// allowing upper and lower casae letters, disallowing repeat characyers.
 	res := rand.Intn(2000000000)
 	
-	log.Printf("%d", res)
-	fmt.Println(res)
-	fmt.Println(rand.Intn(2000000000))
+	log.Printf("%U", res)
+	//fmt.Println(res)
+	//fmt.Println(rand.Intn(2000000000))
 }
