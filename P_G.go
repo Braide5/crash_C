@@ -1,12 +1,27 @@
 package main
 
 import (
-	"log"
+	"fmt"
 	"math/rand"
+	"time"
 )
+
+var symbols = []rune{'@', '#', '$'}
+
 func main() {
-	// Generate a password that is 64 characters long with 10 digits, 10 symbols,
-	// allowing upper and lower casae letters, disallowing repeat characyers.
-	res := rand.Intn(2000000000)
-	log.Printf("%U", res)
+	rand.Seed(time.Now().UnixNano())
+	password := make([]rune, 6)
+	for i := range password {
+		switch rand.Intn(4) {
+		case 0:
+			password[i] = rune(rand.Intn(10) + '0') // digit
+		case 1:
+			password[i] = rune(rand.Intn(26) + 'A') // uppercase letter
+		case 2:
+			password[i] = rune(rand.Intn(26) + 'a') // lowercase letter
+		case 3:
+			password[i] = symbols[rand.Intn(len(symbols))] // symbol
+		}
+	}
+	fmt.Printf("Random password: %s\n", string(password))
 }
