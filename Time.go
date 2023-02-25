@@ -1,12 +1,18 @@
 package main
 
 import (
-	"fmt"
-	"time"
+    "fmt"
+    "time"
 )
 
 func main() {
-	//go whatdayisit()
-	time.Sleep(2 + time.Second)
-	fmt.Println(time.Sleep)
+    // Get the current time
+    now := time.Now()
+
+    // Get the day of the week
+    dayOfWeek := now.Weekday()
+
+    // Print the day of the week
+    fmt.Printf("Today is %s\n", dayOfWeek)
+	fmt.Printf("the time is %d", now)
 }
