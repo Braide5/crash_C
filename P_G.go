@@ -11,6 +11,7 @@ var symbols = []rune{'@', '#', '$'}
 func main() {
 	rand.Seed(time.Now().UnixNano())
 	password := make([]rune, 6)
+	
 	for i := range password {
 		switch rand.Intn(4) {
 		case 0:
