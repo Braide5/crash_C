@@ -41,7 +41,6 @@ func main() {
     topText = padText(topText, maxLen)
     bottomText = padText(bottomText, maxLen)
 
-    fmt.Printf("%s\n%s\n%s\n", asciiArt, topText, bottomText)
 }
 
 func padText(text string, length int) string {
@@ -49,6 +48,5 @@ func padText(text string, length int) string {
     if padSize%2 != 0 {
         padSize++
     }
-    padding := strings.Repeat(" ", padSize/2)
-    return padding + text + padding
+  
 }
