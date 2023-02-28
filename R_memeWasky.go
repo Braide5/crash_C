@@ -37,16 +37,4 @@ func main() {
     if len(bottomText) > maxLen {
         maxLen = len(bottomText)
     }
-
-    topText = padText(topText, maxLen)
-    bottomText = padText(bottomText, maxLen)
-
-}
-
-func padText(text string, length int) string {
-    padSize := length - len(text)
-    if padSize%2 != 0 {
-        padSize++
-    }
-  
 }
