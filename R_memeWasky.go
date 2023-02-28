@@ -25,50 +25,7 @@ func main() {
         "get shit done",
     }
 
-    asciiArts := []string{
-        `
-          ____
-        /      \
-       |        |
-       |        |
-        \______/
-        `,
-        `
-           _.._        ,-----------------.
-        ,'      `-.    ( I am an ASCII art )
-       /                                \
-      |     /                          | 
-      |    /                           |
-      (   /                            |
-      |                               |
-      |                              |
-      \                          o    |
-       `,  
-      `
-       / \    / \
-      (   )  (   )
-       \ /    \ /
-       `,  
-      `
-        _____
-       /     \
-      | () () |
-       \  ^  /
-        |||||
-        |||||
-       `,  
-      `
-       _____
-      /     \
-     | () () |
-      \  ^  /
-       |~~~|
-       |===|
-       |~~~|
-       |   |
-      `,  
-    }
-
+    
     topIndex := rand.Intn(len(topTexts))
     bottomIndex := rand.Intn(len(bottomTexts))
     asciiIndex := rand.Intn(len(asciiArts))
