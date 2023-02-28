@@ -28,12 +28,11 @@ func main() {
     
     topIndex := rand.Intn(len(topTexts))
     bottomIndex := rand.Intn(len(bottomTexts))
-    asciiIndex := rand.Intn(len(asciiArts))
+    
 
     topText := fmt.Sprintf(" %s ", topTexts[topIndex])
     bottomText := fmt.Sprintf(" %s ", bottomTexts[bottomIndex])
-    asciiArt := asciiArts[asciiIndex]
-
+    
     maxLen := len(topText)
     if len(bottomText) > maxLen {
         maxLen = len(bottomText)
