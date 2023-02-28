@@ -5,6 +5,7 @@ import (
     "math/rand"
     "time"
 )
+
 ////MAKE THIS MINE
 func main() {
     rand.Seed(time.Now().UnixNano())
