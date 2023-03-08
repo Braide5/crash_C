@@ -15,4 +15,5 @@ func main() {
     // Print the day of the week
     fmt.Printf("Today is %s\n", dayOfWeek)
 	fmt.Printf("the time is %s", t.Format("15:04 PM"))
+    //works well
 }
